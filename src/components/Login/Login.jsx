@@ -30,10 +30,10 @@ const Login = () => {
   }
   return (
     <div >
-      <h2 className={`d-flex justify-content-center align-items-center ${style.typing_animation}`}  style={{height:'calc(100vh - 475px)'}}>
+      <h2 className={`d-flex justify-content-center align-items-center ${style.typing_animation}`}  style={{height:'calc(100vh - 400px)'}}>
         <span>It's your personal expense tracker...</span>
       </h2>
-      <div className="d-flex justify-content-center align-items-center " style={{height:'80vh'}}>
+      <div className="d-flex justify-content-center align-items-center " style={{height:'calc(100vh - 530px)'}}>
          <button className={style.google_btn}  onClick={handleLogin} style={{height:'50px',width:'300px',border:'none',borderRadius:'30px',color:'white'}}>
           <FcGoogle style={{fontSize:'30px'}}/> <b style={{fontSize:'15px'}}>Continue with Google</b>
           </button>
