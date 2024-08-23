@@ -86,12 +86,14 @@ export const AddToList=(props)=>{
       props.setDetails('');
       props.setPaymentvia('');
       props.setRefId('');
+
+      setIsEditing(false); 
   }
 
   return (
 
     <div>
-      <h1>add to list</h1>
+      <h1>{isEditing ? 'Edit Expense' : 'Add to List'}</h1>
 
       <form >
         <input type="date" value={props.date} onChange={(e)=>props.setDate(e.target.value)}/>
@@ -109,7 +111,7 @@ export const AddToList=(props)=>{
         <input type="text" placeholder='To / Ref id' value={props.refId} onChange={(e)=>props.setRefId(e.target.value)}/>
         <br /> <br />
 
-        <button type='submit' onClick={handleSave}>Save</button>
+        <button type='submit' onClick={handleSave}>{isEditing ? 'Save Changes' : 'Save'}</button>
         <button type='button' onClick={clearForm}>cancel</button>
 
       </form>
