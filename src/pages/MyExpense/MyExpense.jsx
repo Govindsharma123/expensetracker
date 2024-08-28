@@ -20,6 +20,7 @@ const MyExpense = () => {
     <div>
       
     <AddToList 
+    expenses = {expenses}
     setExpenses={setExpenses}
     expenseToEdit={expenseToEdit} 
         date={date} setDate={setDate}
